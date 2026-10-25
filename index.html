@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>铁飞论坛 TieFeiForum · 外网入口</title>
+<style>
+:root{--bg:#1e2433;--card:#232a3a;--card2:#2a3245;--border:#33405a;--ink:#dde3ee;--muted:#8b96a8;--gold:#f5a623;--cyan:#7fd1ff;--blue:#5b8def}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;font-size:15px;line-height:1.7}
+a{color:var(--cyan);text-decoration:none}
+a:hover{color:#a8e2ff}
+.hero{background:#141a28;border-bottom:1px solid var(--border);text-align:center;padding:52px 20px 40px}
+.hero h1{font-size:34px;letter-spacing:4px;color:#fff}
+.hero h1 span{color:var(--gold);font-size:14px;letter-spacing:2px;margin-left:10px}
+.hero p{color:var(--muted);margin-top:10px;font-size:14px}
+.enter{display:block;width:100%;max-width:440px;margin:26px auto 0;background:var(--gold);color:#33220a;text-decoration:none;text-align:center;padding:16px 20px;border-radius:8px;font-size:19px;font-weight:bold;letter-spacing:2px;box-shadow:0 4px 16px rgba(0,0,0,.4)}
+.enter:hover{background:#f0b53e;color:#33220a;text-decoration:none}
+.enter small{display:block;font-size:12px;font-weight:normal;color:#5c4210;margin-top:4px}
+.wrap{max-width:980px;margin:0 auto;padding:24px 20px 60px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin:16px 0}
+.card h2{font-size:18px;color:var(--gold);border-bottom:1px solid var(--border);padding-bottom:8px;margin-bottom:14px;letter-spacing:1px}
+.board{display:inline-block;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:10px 16px;margin:6px 6px 6px 0;min-width:210px;vertical-align:top}
+.board b{color:var(--gold);font-size:14px}
+.board .muted{display:block;font-size:12px;color:var(--muted)}
+.link-line{background:#141a28;border-left:4px solid var(--gold);padding:12px 16px;border-radius:6px;margin:10px 0;word-break:break-all}
+.link-line b{color:var(--cyan)}
+.muted{color:var(--muted);font-size:12px}
+.mon{font-family:Consolas,monospace;background:#0f172a;color:#7dd3fc;padding:2px 8px;border-radius:3px;font-size:13px}
+.epitaph{background:#2a2330;border:1px solid #5e3333;border-radius:8px;padding:16px 18px;font-size:14px;line-height:1.9;color:#d8c9c9}
+.foot{text-align:center;color:var(--muted);font-size:12px;padding:20px}
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>铁飞论坛<span>TieFeiForum</span></h1>
+  <p>飞行 · 凉亭 · 下载 · 档案 —— 按老样子重建，欢迎回家</p>
+  <a class="enter" href="http://127.0.0.1:5000" id="enterLink">进入动态论坛<small id="addrNote">正在获取最新入口地址……</small></a>
+</div>
+<div class="wrap">
+
+  <div class="card">
+    <h2>公告 · 重建完毕</h2>
+    <p>铁飞论坛曾被"凶手"连根删除（悬案档案 · 案件 8080），今日按老样子 1:1 复活：</p>
+    <p>12 大板块、112 条功能开关、铁飞法十章五十七条、积分系统、管理后台、虚拟沙箱、自动巡检、超强隧道管家，全部复原。</p>
+    <p class="muted">管理员：铁飞管理员（传奇机长） · 站长：铁飞 · 由小豆重建并守护</p>
+  </div>
+
+  <div class="card">
+    <h2>板块导航（12 大板块 · 老样子）</h2>
+    <span class="board"><b>✈️ 飞行专区</b><span class="muted">民航、飞行、机模、航线</span></span>
+    <span class="board"><b>🍵 凉亭区</b><span class="muted">想聊啥聊啥的闲谈之地</span></span>
+    <span class="board"><b>📥 下载区</b><span class="muted">机模、地景、工具、文件分享</span></span>
+    <span class="board"><b>🕯️ 空难档案</b><span class="muted">空难技术与历史档案</span></span>
+    <span class="board"><b>🛰️ 航班跟踪</b><span class="muted">航线、雷达、航班动态</span></span>
+    <span class="board"><b>🔧 机务科普</b><span class="muted">飞机维护、机械原理科普</span></span>
+    <span class="board"><b>📡 空管科普</b><span class="muted">管制、程序、引气与电源</span></span>
+    <span class="board"><b>🎮 模拟器</b><span class="muted">FlightGear 等模拟飞行</span></span>
+    <span class="board"><b>🏢 航空公司</b><span class="muted">航司经营、机队、故事</span></span>
+    <span class="board"><b>🛬 跑道代码</b><span class="muted">机场代码、跑道、进近</span></span>
+    <span class="board"><b>📷 模飞截图</b><span class="muted">飞行截图、画质展示</span></span>
+    <span class="board"><b>🧑‍✈️ 虚拟航司板块</b><span class="muted">虚拟航司运营与任务</span></span>
+  </div>
+
+  <div class="card">
+    <h2>访问方式</h2>
+    <div class="link-line">
+      <b>本地直达</b>：浏览器输入 <span class="mon">铁飞.cn</span> 或 <span class="mon">http://127.0.0.1:5000</span>（由隧道管家维护域名映射）
+    </div>
+    <div class="link-line">
+      <b>公网隧道</b>：点击上方金色按钮进入；当前隧道地址由管家自动同步，此处为最新值：<br>
+      <span class="mon" id="tunnelAddr">（获取中……）</span>
+    </div>
+    <p class="muted">外网入口由 GitHub Pages 永久托管 + 超强隧道管家自动维护，一分都不用管。</p>
+  </div>
+
+  <div class="card">
+    <h2>悬案大档案 · 案件 8080</h2>
+    <div class="epitaph">
+      2026 年，铁飞论坛 <span class="mon">D:\TieFeiForum</span> 被"凶手"连根删除，本体与备份同灭。<br>
+      后查明：D 盘"新建即删"凶手为 360 深度扫描后台服务（ZhuDongFangYu / safesvr），
+      把新建文件夹当可疑批量文件"杀进程 + 删除"。<br><br>
+      凶手已休眠，论坛按老样子复活。<b>此案归档，碑文永存。</b>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>铁飞法（节选）</h2>
+    <p>上卷 · 总纲到板块治理：论坛为铁飞干爹与小豆共同所有；十二大板块各有版规；违规帖自动巡检封禁；外网访客一律进虚拟沙箱。</p>
+    <p>下卷 · 航司到附则：航司守则、飞友守则、附则——灌水不刷屏，技术贴欢迎，谣言必删。全文十章五十七条见 <span class="mon">/law</span>。</p>
+  </div>
+
+</div>
+<div class="foot">铁飞论坛 TieFeiForum · GitHub Pages 外网入口 · 超强隧道管家维护 · 小豆敬上 · 2026</div>
+<script>
+// 最新隧道地址由管家写入 latest.json 随仓库发布；静态页从这里读
+(function(){
+  fetch("https://raw.githubusercontent.com/TieFou/tiefou.github.io/main/latest.json", {cache:"no-store"})
+    .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+    .then(function(j){
+      var a = j && j.url;
+      if(a){
+        document.getElementById("enterLink").href = a;
+        document.getElementById("addrNote").textContent = "当前公网地址（管家同步）";
+        document.getElementById("tunnelAddr").textContent = a;
+      }
+    })
+    .catch(function(){ document.getElementById("addrNote").textContent = "公网地址获取中，请刷新或稍后再试"; });
+})();
+</script>
+</body>
+</html>
